@@ -29,7 +29,17 @@ Drag and drop the contents of [Installer.zip](https://github.com/xtomasnemec/Asu
 ![usb drive](fs.png)
 
 ## Instalation
+  * Boot to BIOS and enable CSM ```Advanced mode/Boot/CSM```
+    * Save changes and exit
+  * Enter the BIOS and boot form the USB
+      * Wait for the update to finish
+> [!CAUTION]
+> ***Do not!*** power off your computer while updating. This will brick your motherboard. If this happens your motherboard will enter BIOS Recovery mode and it will try to reflash the stock BIOS from the USB
 
+  * Boot to BIOS and disable CSM ```Advanced mode/Boot/CSM```
+      * Save changes and exit
+  *
+  
 # FAQ
 ## Will it work on my CPU?
 Yes it doesn't matter which of of [these](https://www.asus.com/in/supportonly/tuf%20z270%20mark%202/helpdesk_bios/) CPUs do you use.
@@ -40,11 +50,8 @@ You can use Linux with **4G Decoding on**, recent versions will automatically re
 ## I set an unsupported BAR size and my system won't boot
 Clear CMOS and Resizable BAR should be disabled. In some cases it may be necessary to remove the CMOS battery for Resizable BAR to disable.
 
-### Will less than optimal BAR sizes still give a performance increase ?
-On my system with an i5 3470 and Sapphire Nitro+ RX 580 8GB with [Resizable BAR enabled in driver](https://github.com/xCuri0/ReBarUEFI/wiki/Common-issues-(and-fixes)#how-do-i-enable-resizable-bar-on-unsupported-amd-gpus-) I get an upto 12% FPS increase with 2GB BAR size.
-
 ## Credits
-* [@xCuri0](https://github.com/xCuri0)] for [ReBarUEFI](
+* [@xCuri0](https://github.com/xCuri0) for [ReBarUEFI](https://github.com/xCuri0/ReBarUEFI)
 
 * [@dsanke](https://github.com/dsanke), [@cursemex](https://github.com/cursemex), [@val3nt33n](https://github.com/@val3nt33n), [@Mak3rde](https://github.com/Mak3rde) and [@romulus2k4](https://github.com/romulus2k4) for testing/helping develop patches
 
