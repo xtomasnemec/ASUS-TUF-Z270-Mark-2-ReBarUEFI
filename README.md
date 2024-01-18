@@ -9,27 +9,17 @@ A UEFI DXE driver to enable Resizable BAR on systems which don't support it offi
 </p>
 
 
-![screenshot showing cpu-z, gpu-z and amd software](rebar.png)
+![screenshot showing cpu-z, gpu-z](rebar.png)
 
 ## Requirements
-* (optional) 4G Decoding enabled. See wiki page [Enabling hidden 4G decoding](https://github.com/xCuri0/ReBarUEFI/wiki/Enabling-hidden-4G-decoding) if you can't find an option for it. **Without 4G Decoding you will be limited to 1GB BAR and in some cases 512MB you can try to increase this upto 2GB by reducing TOLUD**
-* (optional) BIOS support for Large BARs. Patches exist to fix most issues relating to this
+*  4G Decoding enabled
+*  Enable CSM Before installing and disable it afterwards
+*  A USB Drive
+*  [Rufus](https://rufus.ie/en/)
+
 
 ## Usage
-Follow the wiki guide [Adding FFS module](https://github.com/xCuri0/ReBarUEFI/wiki/Adding-FFS-module) and continue through the steps. It covers adding the module and the additional modifications needed if required.
-
-Once running the modified firmware make sure that **4G decoding is enabled and CSM is off**.
-
-Next run **ReBarState** which can be found in [Releases](https://github.com/xCuri0/ReBarUEFI/releases) (if you're on Linux build with CMake) and set the Resizable BAR size. In most cases you should be able to use ```32``` (unlimited) without issues but you might need to use a smaller BAR size if ```32``` doesn't work
-
- **If Resizable BAR works for you reply to [List of working motherboards](https://github.com/xCuri0/ReBarUEFI/issues/11) so I can add it to the list.** Most firmware will accept unsigned/patched modules with Secure Boot on so you won't have any problems running certain games.
-
-If you have any issues after enabling Resizable BAR see [Common Issues (and fixes)](https://github.com/xCuri0/ReBarUEFI/wiki/Common-issues-(and-fixes))
-
-## How it works
-The module is added to the UEFI firmware's DXE volume so it gets executed on every boot. The ReBarDxe module replaces the function ```PreprocessController``` of ```PciHostBridgeResourceAllocationProtocol``` with a function that checks for Resizable BAR capability and then sets it to the size from the ```ReBarState``` NVRAM variable after running the original function.
-
-The new ```PreprocessController``` function later gets called during PCI enumeration by the ```PciBus``` module which will detect the new BAR size and allocate it accordingly.
+Format your USB drive with Rufus and 
 
 ## AliExpress X99 Tutorial by Miyconst
 [![Resizable BAR on LGA 2011-3 X99](http://img.youtube.com/vi/vcJDWMpxpjE/0.jpg)](http://www.youtube.com/watch?v=vcJDWMpxpjEE "Resizable BAR on LGA 2011-3 X99")
