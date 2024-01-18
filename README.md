@@ -1,4 +1,4 @@
-<h1 align="center">ReBarUEFI Asus TUF Z270 Mark 2</h1>
+<h1 align="center">ReBarUEFI ASUS TUF Z270 Mark 2</h1>
 <p align="center">
 <a href="https://github.com/xCuri0/ReBarUEFI/actions/workflows/ReBarDxe.yml"><img src="https://img.shields.io/github/actions/workflow/status/xCuri0/ReBarUEFI/ReBarDxe.yml?logo=github&label=ReBarDxe&style=flat-square" alt="GitHub Actions ReBarDxe"></a>
 <a href="https://github.com/xCuri0/ReBarUEFI/actions/workflows/ReBarState.yml"><img src="https://img.shields.io/github/actions/workflow/status/xCuri0/ReBarUEFI/ReBarState.yml?logo=github&label=ReBarState&style=flat-square" alt="GitHub Actions ReBarState"></a>
@@ -35,10 +35,12 @@ Drag and drop the contents of [Installer.zip](https://github.com/xtomasnemec/Asu
       * Wait for the update to finish
 > [!CAUTION]
 > ***Do not!*** power off your computer while updating. This will brick your motherboard. If this happens your motherboard will enter BIOS Recovery mode and it will try to reflash the stock BIOS from the USB
+>
+> **I accept no responsibility for bricked motherboards**
 
   * Boot to BIOS and disable CSM ```Advanced mode/Boot/CSM```
       * Save changes and exit
-  *
+  * Configure ReBar with [Configurator.exe](https://github.com/xtomasnemec/Asus-TUF-Z270-Mark-2-ReBarUEFI/releases)
   
 # FAQ
 ## Will it work on my CPU?
