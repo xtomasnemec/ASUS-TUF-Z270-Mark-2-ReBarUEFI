@@ -52,21 +52,5 @@ You can use Linux with **4G Decoding on**, recent versions will automatically re
 ## I set an unsupported BAR size and my system won't boot
 Clear CMOS and Resizable BAR should be disabled. In some cases it may be necessary to remove the CMOS battery for Resizable BAR to disable.
 
-## Credits
+## Credit
 * [@xCuri0](https://github.com/xCuri0) for [ReBarUEFI](https://github.com/xCuri0/ReBarUEFI)
-
-* [@dsanke](https://github.com/dsanke), [@cursemex](https://github.com/cursemex), [@val3nt33n](https://github.com/@val3nt33n), [@Mak3rde](https://github.com/Mak3rde) and [@romulus2k4](https://github.com/romulus2k4) for testing/helping develop patches
-
-* The Linux kernel especially the ```amdgpu``` driver
-
-* [EDK2](https://github.com/tianocore/edk2) for the base that all OEM UEFI follows
-
-* [Ghidra](https://ghidra-sre.org/) which was used to patch UEFI modules to workaround artificial limitations
-
-* [@vit9696](https://github.com/vit9696) for the NVRAM whitelist patches
-
-* [@ZOXZX](https://github.com/ZOXZX) for helping with the X79 Above 4G patches
-
-* [@NikolajSchlej](https://github.com/NikolajSchlej) for developing UEFITool/UEFIPatch
-
-* [QEMU](https://www.qemu.org/)/OVMF made testing hooking way easier although it didn't have any resizable BAR devices so the only way I could test it was on my actual PC.
