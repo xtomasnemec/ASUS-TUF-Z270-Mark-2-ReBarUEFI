@@ -70,7 +70,7 @@ Yes it doesn't matter which of of [these](https://www.asus.com/in/supportonly/tu
 Yes but i do not recomend it because it is dangerous. But if you want to do it this way you can use AFUWIN using the /GAN command [No direct link because of DMCA](https://letmegooglethat.com/?q=AMI+Aptio+IV+BIOS+Tool+v3.05.04+archive.org)
 
 ## Can I use Resizable BAR on my system without modifying BIOS ?
-You can use Linux with **4G Decoding on**, recent versions will automatically resize and allocate GPU BARs. If your BIOS doesn't have the 4G decoding option (make sure to check [hidden](https://github.com/xCuri0/ReBarUEFI/wiki/Enabling-hidden-4G-decoding)) or DSDT is faulty you can then follow the [Arch wiki guide for DSDT modification](https://wiki.archlinux.org/title/DSDT#Recompiling_it_yourself) using modifications from [DSDT Patching](https://github.com/xCuri0/ReBarUEFI/wiki/DSDT-Patching) and boot with ```pci=realloc``` in your kernel command line. **Currently there is no known method to get it on Windows without BIOS modification**
+You can use Linux with **4G Decoding on**, recent versions will automatically resize and allocate GPU BARs. **Currently there is no known method to get it on Windows without BIOS modification**
 
 ## I want to revert to the original BIOS
 You can do that but remember that you have to disable ReBAR with [Configurator.exe](https://github.com/xtomasnemec/ASUS-TUF-Z270-Mark-2-ReBarUEFI/releases) and then you can revert to the original BIOS
