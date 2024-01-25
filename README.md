@@ -13,8 +13,8 @@ A UEFI DXE driver to enable Resizable BAR on systems which don't support it offi
 # Requirements
 *  A USB Drive
 *  [Rufus](https://rufus.ie/en/)
-* *(Required)* A Skylake (6th gen) or Kaby Lake (7th gen) CPU
-* *(Optional)* a Coffee Lake CPU
+* **(Required)** A Skylake (6th gen) or Kaby Lake (7th gen) CPU
+* **(Optional)** a Coffee Lake CPU
 > [!CAUTION]
 > This BIOS will only work with the **Mark 2** version of the board and **it won't work with the Mark 1**
 
