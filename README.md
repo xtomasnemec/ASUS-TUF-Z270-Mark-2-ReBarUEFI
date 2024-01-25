@@ -63,6 +63,7 @@ A UEFI DXE driver to enable Resizable BAR on systems which don't support it offi
   * Boot to BIOS
     * Enable CSM ```Advanced mode/Boot/CSM/Launch CSM - Enabled/Auto```
     * Disable Above 4G encoding ```Advanced mode/Boot/Above 4G Decoding - Disabled```
+      
       * Save changes and exit
   * Enter the BIOS and boot form the USB
       * Wait for the update to finish and reboot
