@@ -11,10 +11,10 @@ A UEFI DXE driver to enable Resizable BAR on systems which don't support it offi
 ![screenshot showing cpu-z, gpu-z](rebar.png)
 
 # Requirements
-*  4G Decoding enabled
-*  Enable CSM Before installing and disable it afterwards
 *  A USB Drive
 *  [Rufus](https://rufus.ie/en/)
+* *(Required)* A Skylake (6th gen) or Kaby Lake (7th gen) CPU
+* *(Optional)* a Coffee Lake CPU
 > [!CAUTION]
 > This BIOS will only work with the **Mark 2** version of the board and **it won't work with the Mark 1**
 
@@ -50,6 +50,7 @@ A UEFI DXE driver to enable Resizable BAR on systems which don't support it offi
 > **I accept no responsibility for bricked motherboards**
 
   * Boot to BIOS and disable CSM ```Advanced mode/Boot/CSM/Launch CSM - Disabled```
+* Enable Above 4G encoding ```Advanced mode/Boot Above 4G Decoding - Disabled```
       * Save changes and exit
    
 * Prepare the Coffee Lake (8th and 9th gen) CPU by covering/conecting different pads on the CPU as shown (Green/Blue)
@@ -61,7 +62,7 @@ A UEFI DXE driver to enable Resizable BAR on systems which don't support it offi
   > Skip this if you are using a Coffee Lake (8th and 9th gen) CPU
   * Boot to BIOS
     * Enable CSM ```Advanced mode/Boot/CSM/Launch CSM - Enabled/Auto```
-    * Enable Above 4G encoding ```Advanced mode/Boot/Above 4G Decoding - Enabled```
+    * Disable Above 4G encoding ```Advanced mode/Boot/Above 4G Decoding - Disabled```
       * Save changes and exit
   * Enter the BIOS and boot form the USB
       * Wait for the update to finish and reboot
@@ -71,7 +72,8 @@ A UEFI DXE driver to enable Resizable BAR on systems which don't support it offi
 > **I accept no responsibility for bricked motherboards**
 
   * Boot to BIOS and disable CSM ```Advanced mode/Boot/CSM/Launch CSM - Disabled```
-      * Save changes and exit
+* Enable Above 4G encoding ```Advanced mode/Boot/Above 4G Decoding - Enabled```     
+ * Save changes and exit
 
 ## Configuration
   * Configure ReBAR with [Configurator.exe](https://github.com/xtomasnemec/ASUS-TUF-Z270-Mark-2-ReBarUEFI/releases)
