@@ -13,6 +13,7 @@ A UEFI DXE driver to enable Resizable BAR on systems which don't support it offi
 # Requirements
 *  A USB Drive
 *  [Rufus](https://rufus.ie/en/)
+* **(Required for Intel ARC)** Working iGPU
 * **(Required)** A Skylake (6th gen) or Kaby Lake (7th gen) CPU
 * **(Optional)** a Coffee Lake CPU (8th or 9th gen)
 > [!CAUTION]
@@ -42,6 +43,8 @@ A UEFI DXE driver to enable Resizable BAR on systems which don't support it offi
     * Enable CSM ```Advanced mode/Boot/CSM/Launch CSM - Enabled/Auto```
     * Enable Above 4G encoding ```Advanced mode/Boot/Above 4G Decoding - Enabled```
       * Save changes and exit
+> [!WARNING]
+> If you are using Intel ARC you will have to plug in your iGPU
   * Enter the BIOS and boot form the USB
       * Wait for the update to finish and reboot
 > [!CAUTION]
@@ -52,6 +55,7 @@ A UEFI DXE driver to enable Resizable BAR on systems which don't support it offi
   * Boot to BIOS and disable CSM ```Advanced mode/Boot/CSM/Launch CSM - Disabled```
 * Enable Above 4G encoding ```Advanced mode/Boot Above 4G Decoding - Disabled```
       * Save changes and exit
+      * Now you can plug in your monitor to the dGPU **(Intel ARC only)**
    
 * Prepare the Coffee Lake (8th and 9th gen) CPU by covering/conecting different pads on the CPU as shown (Green/Blue)
       ![cpu](pinwork_map.png)
@@ -65,16 +69,19 @@ A UEFI DXE driver to enable Resizable BAR on systems which don't support it offi
     * Disable Above 4G encoding ```Advanced mode/Boot/Above 4G Decoding - Disabled```
       
       * Save changes and exit
+> [!WARNING]
+> If you are using Intel ARC you will have to plug in your iGPU
   * Enter the BIOS and boot form the USB
       * Wait for the update to finish and reboot
 > [!CAUTION]
-> ***Do not!*** power off your computer while updating. This will brick your motherboard. If this happens your motherboard will enter BIOS Recovery mode and it will try to reflash the stock BIOS from the USB (I included the 1301 BIOS in [Installer.zip](https://github.com/xtomasnemec/ASUS-TUF-Z270-Mark-2-ReBarUEFI/releases/) so you can reflash it without using a second PC)
+> ***Do not!*** power off your computer while updating. This will brick your motherboard. If this happens your motherboard will enter BIOS Recovery mode and it will try to reflash the stock BIOS from the USB (I included the 1301 BIOS in [Installer8thGEN.zip](https://github.com/xtomasnemec/ASUS-TUF-Z270-Mark-2-ReBarUEFI/releases/) so you can reflash it without using a second PC)
 >
 > **I accept no responsibility for bricked motherboards**
 
   * Boot to BIOS and disable CSM ```Advanced mode/Boot/CSM/Launch CSM - Disabled```
 * Enable Above 4G encoding ```Advanced mode/Boot/Above 4G Decoding - Enabled```     
  * Save changes and exit
+ * Now you can plug in your monitor to the dGPU **(Intel ARC only)**
 
 ## Configuration
   * Configure ReBAR with [Configurator.exe](https://github.com/xtomasnemec/ASUS-TUF-Z270-Mark-2-ReBarUEFI/releases)
