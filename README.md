@@ -5,6 +5,8 @@
 </p>
 <p align="center">
 A UEFI DXE driver to enable Resizable BAR on systems which don't support it officially. This provides performance benefits and is even <a href="https://www.intel.com/content/www/us/en/support/articles/000092416/graphics.html">required</a> for Intel Arc GPUs to function optimally.
+> [!WARNING]
+> Not compatible with Nvidia Turing GPUs (GTX 1600 and RTX 2000)
 </p>
 
 
