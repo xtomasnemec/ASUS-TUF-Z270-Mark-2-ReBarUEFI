@@ -27,7 +27,7 @@ A UEFI DXE driver to enable Resizable BAR on systems which don't support it offi
 
 ![rufus](rufus.png)
 
-* Drag and drop the contents of [Installer.zip](https://github.com/xtomasnemec/ASUS-TUF-Z270-Mark-2-ReBarUEFI/releases/) for Skylake (6th gen) or Kaby Lake (7th gen) CPU or [Installer8thGEN.zip](https://github.com/xtomasnemec/ASUS-TUF-Z270-Mark-2-ReBarUEFI/releases/) for Coffee Lake (8th and 9th gen) CPU to the Root of the USB drive. It should look like this:
+* Drag and drop the contents of [Installer.zip](https://github.com/xtomasnemec/ASUS-TUF-Z270-Mark-2-ReBarUEFI/releases/) for Skylake (6th gen) and Kaby Lake (7th gen) CPU or [Installer8thGEN.zip](https://github.com/xtomasnemec/ASUS-TUF-Z270-Mark-2-ReBarUEFI/releases/) for Coffee Lake (8th and 9th gen) CPU to the Root of the USB drive. It should look like this:
 
 ![usb drive](fs.png)
 
