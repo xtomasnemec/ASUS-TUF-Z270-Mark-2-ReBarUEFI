@@ -8,7 +8,6 @@ A UEFI DXE driver to enable Resizable BAR on systems which don't support it offi
 </p>
 
 > [!WARNING]
-
 > Not compatible with Nvidia Turing GPUs (GTX 1600 and RTX 2000)
 
 
