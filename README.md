@@ -10,6 +10,9 @@ A UEFI DXE driver to enable Resizable BAR on systems which don't support it offi
 > [!WARNING]
 > Not compatible with Nvidia Turing GPUs (GTX 1600 and RTX 2000)
 
+> [!WARNING]
+> Vulnerable to Spectre 
+
 
 ![screenshot showing cpu-z, gpu-z](rebar.png)
 
@@ -19,8 +22,6 @@ A UEFI DXE driver to enable Resizable BAR on systems which don't support it offi
 * **(Required for Intel ARC)** Working iGPU
 * **(Required)** A Skylake (6th gen) or Kaby Lake (7th gen) CPU
 * **(Optional)** a Coffee Lake CPU (8th or 9th gen)
-> [!CAUTION]
-> This BIOS will only work with the **Mark 2** version of the board and **it won't work with the Mark 1**
 
 
 # Usage
